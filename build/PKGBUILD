@@ -36,4 +36,5 @@ package() {
 	cd "${srcdir}/go/src/github.com/malyutinegor/funcd"
 
 	install -Dm755 "funcd" "${pkgdir}/usr/bin/funcd"
+	install -Dm755 "funcd.service" "${pkgdir}/etc/systemd/system/funcd.service"
 }
