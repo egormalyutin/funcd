@@ -3,8 +3,8 @@ default: build
 build:
 	go build
 
-build-cross:
-	gox -os="linux"
+run: build
+	su -c "./funcd" # Exactly su -c, NOT sudo
 
 install:
 	echo Hi!

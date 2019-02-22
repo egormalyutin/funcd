@@ -2,11 +2,17 @@ package main
 
 import (
 	"log"
+	"os"
 
 	. "github.com/gvalkov/golang-evdev"
 )
 
 func main() {
+	if os.Getuid() != 0 {
+		log.Print("Funcd must be started from root user.")
+		log.Fatal("If you want to run it using \"sudo\", please, use \"su -c\", or audio controls will not work.")
+	}
+
 	var err error
 
 	lastBrightness, err = getBrightness()
@@ -57,7 +63,7 @@ func main() {
 		}(device)
 	}
 
-	log.Printf("Funcd started, listening on %d devices", len(devices))
+	log.Printf("Funcd started")
 
 	for _ = range devices {
 		<-done
