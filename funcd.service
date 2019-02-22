@@ -1,0 +1,7 @@
+[Service]
+Type=simple
+ExecStart=/usr/bin/funcd
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
