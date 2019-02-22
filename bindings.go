@@ -35,7 +35,6 @@ func toggleTouchpadBinding(ev *InputEvent) error {
 }
 
 var bindings = map[int]func(*InputEvent) error{
-	// BRIGHTNESS //
 	KEY_SCREENLOCK:  screensaverBinding,
 	KEY_SCREENSAVER: screensaverBinding,
 	KEY_BRIGHTNESSUP: func(ev *InputEvent) error {
@@ -53,11 +52,8 @@ var bindings = map[int]func(*InputEvent) error{
 		return nil
 	},
 
-	// TOUCHPAD //
 	KEY_TOUCHPAD_TOGGLE: toggleTouchpadBinding,
-	KEY_F21:             toggleTouchpadBinding,
 
-	// VOLUME //
 	KEY_MUTE: func(ev *InputEvent) error {
 		kv := NewKeyEvent(ev)
 		if kv.State == KeyUp {

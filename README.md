@@ -8,6 +8,16 @@ funcd is deamon for functional keys (works without X11). It can:
 - Decrease volume
 - Increase volume
 
-## Dependencies:
+## Installation
+
+### Dependencies
 - amixer
 - xinput
+
+### Building from source
+```
+go get github.com/malyutinegor/funcd
+cd $GOPATH/src/github.com/malyutinegor/funcd
+make
+sudo make install
+```
