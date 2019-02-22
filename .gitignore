@@ -1,1 +1,4 @@
 /funcd
+/build/*
+!/build/
+!/build/PKGBUILD
