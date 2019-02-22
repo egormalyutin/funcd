@@ -1,14 +1,14 @@
 # Maintainer: Egor Malyutin <egorcod.tk@gmail.com>
 
 pkgname=funcd-git
-pkgver=r9.9f32487
+pkgver=r11.d7ce048
 _pkgname=funcd
 pkgrel=1
 pkgdesc="Daemon for functional keys (works without X11)"
 url="https://github.com/malyutinegor/funcd"
 arch=('x86_64' 'i686')
 license=('MIT')
-depends=('alsa-utils')
+depends=('alsa-utils' 'xorg-xinput')
 makedepends=('go')
 source=("${_pkgname}::git+https://github.com/malyutinegor/funcd.git")
 sha256sums=('SKIP')
