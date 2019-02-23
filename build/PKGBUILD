@@ -1,7 +1,7 @@
 # Maintainer: Egor Malyutin <egorcod.tk@gmail.com>
 
 pkgname=funcd-git
-pkgver=r12.31f1568
+pkgver=r14.a2d3c2d
 _pkgname=funcd
 pkgrel=1
 pkgdesc="Daemon for functional keys (works without X11)"
