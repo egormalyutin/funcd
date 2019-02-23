@@ -7,6 +7,8 @@ import (
 	. "github.com/gvalkov/golang-evdev"
 )
 
+// TODO: fix volume in systemctl
+
 func main() {
 	if os.Getuid() != 0 {
 		log.Print("Funcd must be started from root user.")
