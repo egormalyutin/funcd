@@ -10,7 +10,6 @@ import (
 func main() {
 	if os.Getuid() != 0 {
 		log.Print("Funcd must be started from root user.")
-		log.Fatal("If you want to run it using \"sudo\", please, use \"su -c\", or audio controls will not work.")
 	}
 
 	var err error

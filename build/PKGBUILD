@@ -3,7 +3,7 @@
 pkgname=funcd-git
 pkgver=r19.07455a2
 _pkgname=funcd
-pkgrel=1
+pkgrel=2
 pkgdesc="Daemon for functional keys (works without X11)"
 url="https://github.com/malyutinegor/funcd"
 arch=('x86_64' 'i686')
