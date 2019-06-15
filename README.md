@@ -8,6 +8,9 @@ funcd is daemon for functional keys (works without X11). It can:
 - Decrease volume
 - Increase volume
 
+### Status of project
+All basic functional is already done, but you can feel free to open an issue with feature request or/and pull request :)
+
 ## Installation
 
 ### Dependencies
